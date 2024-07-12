@@ -1,1 +1,1 @@
-print("hello world！wang")
+print("你好，我爱你")
