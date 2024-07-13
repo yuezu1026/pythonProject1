@@ -91,7 +91,7 @@ def log(func):
 log(print)("牛栏",'织女')
 #f("牛栏",'织女')  #dfds
 
-class Student:
+class Student(object):
     def __init__(self,name,score):
         self.name=name
         self.score=score
