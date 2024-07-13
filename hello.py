@@ -105,9 +105,36 @@ class Student(object):
     def __init__(self,temp_name,temp_age):
         self.name=temp_name
         self.age =temp_age
+    def change_age(self,new_age):
+        self.age = new_age
+    def get_name(self):
+        return self.name
+
 s1 = Student('张三',18)
+print(s1.age)
+s1.change_age(20)
 print(s1.name)
 print(s1.age)
+print(s1.get_name())
+
+class Student(object):
+    company = "尚学堂"
+    count = 0
+    def __init__(self):
+        Student.count += 1
+
+    @classmethod
+    def printCompany(cls):
+        print(cls.company)
+
+
+s1 = Student()
+s1 = Student()
+s1 = Student()
+print(s1.company)
+print(s1.count)
+Student.printCompany()
+
 
 
 
