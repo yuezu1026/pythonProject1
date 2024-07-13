@@ -82,14 +82,14 @@ result=f(20)
 print(result)
 
 def log(func):
-    def wrapper():
-        func("牛郎和侄女相约鹊桥")
-        func("牛郎和织女看电影")
-        func("牛郎和侄女明年见")
+    def wrapper(a,b):
+        func("%s和%s相约鹊桥"%(a,b))
+        func("%s和%s女看电影"%(a,b))
+        func("%s和%s明年见"%(a,b))
     return wrapper
 
-f = log(print)
-f()
+log(print)("牛栏",'织女')
+#f("牛栏",'织女')
 
 
 
