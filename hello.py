@@ -91,6 +91,19 @@ def log(func):
 log(print)("牛栏",'织女')
 #f("牛栏",'织女')  #dfds
 
+class Student:
+    def __init__(self,name,score):
+        self.name=name
+        self.score=score
+    def say_score(self):
+        print(self.name,'的分数是:',self.score)
+
+s1 = Student('zhang',90)
+s1.say_score()
+
+
+
+
 
 
 
