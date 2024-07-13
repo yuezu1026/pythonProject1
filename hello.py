@@ -69,6 +69,27 @@ def convert(func,seq):
     return [func(eachNum) for eachNum in seq]
 
 print(convert(int,myseq))
+print(convert(float,myseq))
+print(convert(mytest,myseq))
+
+
+def func_out(num1):
+    def func_in(num2):
+        return num1 + num2
+    return func_in
+f=func_out(10)
+result=f(20)
+print(result)
+
+def log(func):
+    def wrapper():
+        func("牛郎和侄女相约鹊桥")
+        func("牛郎和织女看电影")
+        func("牛郎和侄女明年见")
+    return wrapper
+
+f = log(print)
+f()
 
 
 
