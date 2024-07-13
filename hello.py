@@ -89,7 +89,8 @@ def log(func):
     return wrapper
 
 log(print)("牛栏",'织女')
-#f("牛栏",'织女')
+#f("牛栏",'织女')  #dfds
+
 
 
 
