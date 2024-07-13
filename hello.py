@@ -101,6 +101,14 @@ class Student(object):
 s1 = Student('zhang',90)
 s1.say_score() #ddd
 
+class Student(object):
+    def __init__(self,temp_name,temp_age):
+        self.name=temp_name
+        self.age =temp_age
+s1 = Student('张三',18)
+print(s1.name)
+print(s1.age)
+
 
 
 
