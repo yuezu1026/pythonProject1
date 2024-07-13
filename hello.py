@@ -22,5 +22,12 @@ mytest(age=21,name='dskdsk')
 
 #dfdskfk
 
+def mytest(name,age,*hobby):
+    print('my name is %s,my age is %d' %(name,age))
+    print(hobby,len(hobby))
+mytest('fdsfkds',19)
+mytest('fdsfkds',19,'soccer','basketball','baseball')
+
+
 
 
